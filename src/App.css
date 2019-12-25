@@ -1,22 +1,24 @@
-.App {
-  text-align: center;
+body {
+	margin: 0;
+	padding: 0;
+  	background: #f5f4fb;
+	box-sizing: border-box;
+	font-family: helvetica, monospace, luna;
+	overflow-y: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: .5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-link:hover {
+	color: #363c99 !important;
+	font: 18px bold;
+	border: 2px solid #eee;
 }
 
-.App-link {
-  color: #09d3ac;
+#separateCalendary {
+  border: 1px solid #a7b7be;
 }
